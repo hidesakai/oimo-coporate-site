@@ -1,0 +1,176 @@
+
+.container.is-fluid {
+  @include mobile() {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @include tablet() {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @include desktop() {
+    padding-left: 91px;
+    padding-right: 91px;
+  }
+}
+
+.primary {
+  background-color: $primary-background;
+  color: $primary-text;
+  h2 {
+    color: $primary-text;
+  }
+}
+
+.secondary {
+  background-color: $secondary-background;
+  color: $secondary-text;
+  h2 {
+    color: $secondary-text;
+  }
+}
+
+.content p {
+  &:not(:last-child) {
+    margin-bottom: 1.5em;
+  }
+}
+
+.button {
+  border-radius: 30px;
+  padding-left: 62px;
+  padding-right: 62px;
+}
+
+#index {
+  .primary .section {
+    @include mobile() {
+      padding-top: 100px;
+      padding-bottom: 95px;
+    }
+    @include tablet() {
+      padding-top: 100px;
+      padding-bottom: 85px;
+    }
+  }
+
+  .logo {
+    @include block(87px);
+    @include mobile() {
+      text-align: center;
+    }
+    img {
+      @include mobile() {
+        width: 68vw;
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: 0.5em;
+  }
+
+  .lead {
+    @include block(45px);
+  }
+
+  .sign {
+    .position {
+      font-weight: $weight-bold;
+    }
+    .name {
+      font-size: $size-3;
+    }
+  }
+}
+
+#footer {
+  @include mobile() {
+    padding-top: 65px;
+    padding-bottom: 100px;
+  }
+  @include tablet() {
+    padding-top: 56px;
+    padding-bottom: 63px;
+  }
+
+  .button {
+    &.is-primary {
+      padding-top: 0.25em;
+      padding-bottom: 0.25em;
+      background: $primary-background;
+      color: $primary-text;
+      font-size: $size-4;
+      font-weight: $weight-bold;
+      line-height: 1;
+      height: 2.3em;
+      box-shadow: none!important;
+      &::after {
+        // margin-top: px;
+        margin-left: 10px;
+        display: inline-block;
+        content: url(~assets/img/open_in_new.svg);
+      }
+    }
+  }
+
+  .subtitle {
+    margin-bottom: 0.5em;
+  }
+
+  .num {
+    font-family: $family-secondary;
+    font-size: $size-5;
+    font-weight: $weight-bold;
+  }
+
+  .contact {
+    @include touch() {
+      text-align: center;
+    }
+  }
+
+  .address,
+  .phone {
+    @include desktop() {
+      padding-top: 15px;
+    }
+  }
+
+  .address {
+    @include desktop() {
+      margin-left: 180px;
+      width: 380px;
+    }
+    @include touch() {
+      margin-top: 60px;
+    }
+  }
+
+  .phone {
+    @include desktop() {
+      margin-left: 155px;
+    }
+    @include touch() {
+      margin-top: 55px;
+    }
+  }
+}
+
+#contact {
+  .primary {
+    .button {
+      &.is-primary {
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        background: $secondary-background;
+        color: $secondary-text;
+        font-size: $size-4;
+        font-weight: $weight-bold;
+        line-height: 1;
+        height: 2.3em;
+        box-shadow: none!important;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+$primary-background: #233245;
+$secondary-background: #AD9485;
+$primary-text: $secondary-background;
+$secondary-text: $primary-background;
+
+$body-background-color: $secondary-background;
+$body-color: $primary-text;
+
+$family-sans-serif: 'Noto Sans JP', sans-serif;
+$family-secondary: 'Roboto', sans-serif;
+$weight-bold: 700;
+$size-1: 3em;
+$size-2: 2.5em;
+$size-3: 2em;
+$size-4: 1.44em;
+$size-5: 1.22em;
+$size-6: 1em;
+$size-7: 0.75em;
+$body-weight: $weight-medium;
+$body-font-size: 18px;
+$body-line-height: 1.6667;
+
+$section-padding: 3rem 0;
+
+$label-color: $body-color;
+
+@import '~bulma';
+@import "style";

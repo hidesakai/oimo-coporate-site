@@ -5,27 +5,29 @@
   "author": "apricoton",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --hostname 0.0.0.0 --port 28000",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "test": "jest"
   },
   "dependencies": {
+    "@nuxtjs/dotenv": "^1.4.0",
+    "bulma": "^0.8.2",
     "nuxt": "^2.0.0",
-    "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/pwa": "^3.0.0-0",
-    "@nuxtjs/dotenv": "^1.4.0"
+    "nuxt-webfontloader": "^1.1.0"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^1.19.1",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-jest": "^24.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "jest": "^24.1.0",
-    "vue-jest": "^4.0.0-0",
-    "ts-jest": "^25.0.0"
+    "node-sass": "^4.14.1",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2",
+    "ts-jest": "^25.0.0",
+    "vue-jest": "^4.0.0-0"
   }
 }
