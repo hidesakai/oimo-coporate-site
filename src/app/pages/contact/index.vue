@@ -48,7 +48,7 @@
                   </div>
 
                   <div class="field">
-                    <div class="g-recaptcha" data-sitekey="6LelIfYUAAAAAK7HnfPaSVlINuz2VfXSODr0FwMW"></div>
+                    <div class="g-recaptcha" data-sitekey="6Ld1nfgUAAAAAHbhQviDzpis8b8fF9IpdqknMVGB"></div>
                   </div>
 
                   <div class="field">
