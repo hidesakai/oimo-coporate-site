@@ -3,7 +3,7 @@
     <main class="primary">
       <section class="section">
         <div class="container is-fluid">
-          <div class="columns">
+          <div class="columns is-centered">
             <div class="column is-half-desktop">
               <div class="content">
                 <h2 class="title is-3 is-family-secondary has-text-weight-bold">Contact</h2>
@@ -63,13 +63,11 @@
         </div>
       </section>
     </main>
-    <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import Footer from '@/components/footer.vue'
 
 declare global {
     interface Window {
@@ -78,6 +76,7 @@ declare global {
 }
 
 export default Vue.extend({
+  layout: 'without-footer',
   head () {
     return {
       title: 'Contact | OIMO Inc.',
@@ -94,9 +93,6 @@ export default Vue.extend({
         }
       ]
     }
-  },
-  components: {
-    Footer
   },
   async mounted() {
     this.$nextTick(() => {

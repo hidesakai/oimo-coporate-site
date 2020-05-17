@@ -3,7 +3,7 @@
     <div class="container is-fluid">
       <div class="is-flex-desktop">
         <div class="contact">
-          <nuxt-link to="contact" class="button is-primary is-family-secondary">Contact</nuxt-link>
+          <a href="/contact/" target="_blank" rel="noopener" class="button is-primary is-family-secondary">Contact</a>
         </div>
         <div class="address">
           <h2 class="subtitle is-4 is-family-secondary has-text-weight-bold">Address</h2>

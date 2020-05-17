@@ -1,3 +1,11 @@
+html,
+body {
+  height: 100%;
+}
+
+body.without-footer {
+  background-color: $primary-background;
+}
 
 .container.is-fluid {
   @include mobile() {
