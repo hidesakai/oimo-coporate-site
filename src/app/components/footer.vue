@@ -12,7 +12,7 @@
         </div>
         <div class="phone">
           <h2 class="subtitle is-4 is-family-secondary has-text-weight-bold">Phone</h2>
-          <div class="num">03-6822-3324</div>
+          <div class="num"><a href="tel:03-6822-3324">03-6822-3324</a></div>
         </div>
       </div>
     </div>

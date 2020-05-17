@@ -55,8 +55,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv',
+    '@nuxtjs/google-gtag',
     'nuxt-webfontloader'
   ],
   webfontloader: {
@@ -68,6 +67,10 @@ export default {
       urls: ['https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&family=Roboto:wght@700&display=auto']
     }
   },
+  'google-gtag': {
+    id: 'UA-166937140-1',
+    debug: true
+  },
   /*
   ** Build configuration
   */
@@ -76,6 +79,8 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
-    }
+      //
+    },
+    extractCSS: true
   }
 }

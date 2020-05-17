@@ -10,12 +10,10 @@
                 <h2 class="title is-3 is-family-secondary has-text-weight-bold">About OIMO</h2>
                 <div class="lead">
                   <p>
-                    FITはブランディング・Webサイト制作を主とする、フリーランスのデザインスタジオです。<br>
-                    FITはいわゆる企業のDesign・Webの制作会社ではありません。 少数精鋭で、Design &amp; Directionの両軸から、新しい視点と発想力で、企画提案、要件定義からディレクション・デザイン・Web実装までを行います。
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                   </p>
                   <p>
-                    制作協力・制作依頼などは、<br>
-                    hello@fitd.jpまでお気軽にご相談ください
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                   </p>
                 </div>
                 <div class="sign">
@@ -35,17 +33,16 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  head() {
-    return {
-      title: 'OIMO Inc.',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'ディスクリプションディスクリプションディスクリプションディスクリプション'
-        }
-      ]
-    }
+  name: 'index',
+  head: {
+    title: 'OIMO Inc.',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'ディスクリプションディスクリプションディスクリプションディスクリプション'
+      }
+    ]
   }
 })
 </script>

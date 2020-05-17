@@ -93,6 +93,10 @@ body.without-footer {
 }
 
 #footer {
+  a {
+    color: $secondary-text;
+  }
+
   @include mobile() {
     padding-top: 65px;
     padding-bottom: 100px;
@@ -180,5 +184,9 @@ body.without-footer {
         box-shadow: none!important;
       }
     }
+  }
+
+  .recaptcha {
+    margin: 1.5em auto 2em;
   }
 }

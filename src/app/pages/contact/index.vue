@@ -34,20 +34,13 @@
                     <div data-formrun-show-if-error="お問い合わせ" class="help is-danger">お問い合わせ内容を入力してください</div>
                   </div>
 
-                  <!-- <div>
-                    <label>個人情報利用同意 [必須]</label>
-                    <input type="checkbox" name="個人情報利用同意" data-formrun-required>
-                    <div data-formrun-show-if-error="個人情報利用同意">同意してください</div>
-                  </div> -->
-
-                  <!-- ボット投稿をブロックするためのタグ -->
                   <div class="_formrun_gotcha">
                     <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
                     <label for="_formrun_gotcha">If you are a human, ignore this field</label>
                     <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
                   </div>
 
-                  <div class="field">
+                  <div class="field recaptcha">
                     <div class="g-recaptcha" data-sitekey="6Ld1nfgUAAAAAHbhQviDzpis8b8fF9IpdqknMVGB"></div>
                   </div>
 
@@ -76,23 +69,22 @@ declare global {
 }
 
 export default Vue.extend({
+  name: 'contact',
   layout: 'without-footer',
-  head () {
-    return {
-      title: 'Contact | OIMO Inc.',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'ディスクリプションディスクリプションディスクリプションディスクリプション'
-        }
-      ],
-      script: [
-        {
-          src: 'https://www.google.com/recaptcha/api.js'
-        }
-      ]
-    }
+  head: {
+    title: 'Contact | OIMO Inc.',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'ディスクリプションディスクリプションディスクリプションディスクリプション'
+      }
+    ],
+    script: [
+      {
+        src: 'https://www.google.com/recaptcha/api.js'
+      }
+    ]
   },
   async mounted() {
     this.$nextTick(() => {
