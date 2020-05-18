@@ -72,13 +72,11 @@ export default Vue.extend({
   name: 'contact',
   layout: 'without-footer',
   head: {
-    title: 'Contact | OIMO Inc.',
+    title: 'お問い合わせ | ' + process.env.titleBase,
     meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'ディスクリプションディスクリプションディスクリプションディスクリプション'
-      }
+      { hid: 'og:type', property: 'og:type', content: 'article' },
+      { hid: 'og:title', property: 'og:title', content: 'お問い合わせ | ' + process.env.titleBase },
+      { hid: 'og:url', property: 'og:url', content: process.env.baseUri + 'contact/' }
     ],
     script: [
       {
@@ -90,6 +88,6 @@ export default Vue.extend({
     this.$nextTick(() => {
       window.Formrun.init('.formrun')
     })
-}
+  }
 })
 </script>

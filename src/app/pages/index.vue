@@ -10,10 +10,11 @@
                 <h2 class="title is-3 is-family-secondary has-text-weight-bold">About OIMO</h2>
                 <div class="lead">
                   <p>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    株式会社 OIMO(オイモ)は、PHPでのWebシステム・Webサービス開発を取り扱っています。新規開発から保守・運用サポートなど、様々な形でのサービスをご提携させていただいております。<br>
+                    OIMOは、Web開発を「スモールスタート」「最小構成」で実現することを心がけています。ご相談内容によっては、プログラミング言語を扱わないノーコード・ローコード開発をご提案させていただくこともございます。
                   </p>
                   <p>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    PHP開発以外でのご相談も受け付けておりますので、お気軽にご相談ください。
                   </p>
                 </div>
                 <div class="sign">
@@ -35,13 +36,11 @@ import Vue from 'vue'
 export default Vue.extend({
   name: 'index',
   head: {
-    title: 'OIMO Inc.',
+    title: process.env.titleBase,
     meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'ディスクリプションディスクリプションディスクリプションディスクリプション'
-      }
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:title', property: 'og:title', content: String(process.env.titleBase) },
+      { hid: 'og:url', property: 'og:url', content: String(process.env.baseUri) },
     ]
   }
 })
