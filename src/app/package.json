@@ -14,7 +14,7 @@
   "dependencies": {
     "@nuxtjs/google-gtag": "^1.0.4",
     "bulma": "^0.8.2",
-    "nuxt": "^2.0.0",
+    "nuxt": "^3.4.3",
     "nuxt-webfontloader": "^1.1.0"
   },
   "devDependencies": {
